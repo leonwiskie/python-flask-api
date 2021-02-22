@@ -1,0 +1,22 @@
+apiVersion: skaffold/v2beta12
+kind: Config
+metadata:
+  name: python-flask-api
+build:
+  artifacts:
+  - image: debiteuren-api
+    context: debiteuren
+    docker:
+      dockerfile: Dockerfile
+  - image: facturen-api
+    context: facturen
+    docker:
+      dockerfile: Dockerfile
+  - image: rekenmodule-api
+    context: rekenmodule
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - pod.yaml
