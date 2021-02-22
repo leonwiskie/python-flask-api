@@ -18,3 +18,8 @@ https://dev.to/alissonzampietro/the-amazing-journey-of-docker-compose-17lj
 ## deel 2
 Met een reverse proxy Nginx 
 https://dev.to/sukhbirsekhon/what-is-docker-reverse-proxy-45mm
+
+## API Gateway
+https://www.digitalocean.com/community/tutorials/how-to-create-an-api-gateway-using-ambassador-on-digitalocean-kubernetes
+
+https://www.getambassador.io/docs/latest/topics/install/install-ambassador-oss/

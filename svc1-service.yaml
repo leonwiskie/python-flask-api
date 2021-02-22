@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: svc1
+  annotations:
+    getambassador.io/config: |
+      ---
+      apiVersion: ambassador/v1
+      kind: Mapping
+      name: svc1-service_mapping
+      host: svc1.your-domain
+      prefix: /
+      service: svc1:80
+spec:
+  selector:
+    app: nginx
+    name: svc1
+  ports:
+  - name: http
+    protocol: TCP
+    port: 80
